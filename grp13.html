@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        marquee{
+            font-size: 30px;
+        }
+       .b{
+        text-align: center;
+        font-size: 40px;
+    font-style: italic;
+       }
+nav a{
+  background-color: antiquewhite;
+  color: black;
+  outline-color: black;
+}
+       .flip-box {
+        display: flex;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  justify-content: center;
+align-items: center;
+align-self: center;
+margin:30px 530px;
+}
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  background-color: transparent;
+
+}
+
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-box-back {
+  background-color: antiquewhite;
+  color: white;
+  transform: rotateY(180deg);
+}
+nav a{
+    background-color: aliceblue;
+    color: blue;
+}
+
+        body{
+           background-image: url("https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,w_1460/at%2Farchive%2Fa2822e4b591e1f151c60b857bddc7b528448e894");
+           text-align: center;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <marquee behavior="" direction="" >   <b>Welcome to our website. Search easily for your desired property!!</b></marquee>
+
+    <h1> 
+        <img src="https://th.bing.com/th/id/OIP.XB7JMQv4juK2Z0kaKEkVfAHaHa?w=167&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" height="40" width="40">GoEasy</h1>
+
+
+   
+    <h1>Choose your favourite city</h1>
+<nav>
+<a href="1.html" > PUNE</a>
+<a href="2.html"> MUMBAI</a>
+<a href="3.html"> BANGLORE</a>
+<a href="4.html"> KOLKATA</a></nav>
+</nav>
+<div class="flip-box">
+    <a href="am.html">.</a>
+    <div class="flip-box-inner">
+        
+      <div class="flip-box-front">
+        <h2 class="b">AMENITIES</h2>
+      </div>
+      <div class="flip-box-back">
+        <h2><img src="https://lifestyle.prod.content.iproperty.com/news/wp-content/uploads/sites/2/2017/08/25110517/pool7.jpg" height="183px" width="250px" ></h2>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
